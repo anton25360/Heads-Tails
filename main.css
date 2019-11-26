@@ -25,21 +25,59 @@
 }
 
 .target{
-    border: 2px solid red;
     display: inline-block;
-    font-size: 10vw;
-
-    background: linear-gradient(to right, #43cea2, #185a9d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 16vw;
 }
 
-.target2{
-    border: 2px solid red;
-    display: inline-block;
-    font-size: 10vw;
 
-    background: linear-gradient(to right, #ee0979, #ff6a00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+
+
+
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, red, blue );
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+	        animation: gradientBG 10s ease infinite;
+}
+.containerX {
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	text-align: center;
+}
+h1 {
+	font-weight: 900;
+}
+a {
+	text-decoration: none;
+	color: #212121;
+}
+@-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
